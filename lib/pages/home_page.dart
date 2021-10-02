@@ -105,7 +105,7 @@ class _HomePageState extends State<HomePage> {
                                     controller: _scrollController,
                                     gridDelegate:
                                         const SliverGridDelegateWithFixedCrossAxisCount(
-                                      crossAxisCount: 2,
+                                      crossAxisCount: 3,
                                       childAspectRatio: 0.8,
                                     ),
                                     shrinkWrap: true,
@@ -113,11 +113,28 @@ class _HomePageState extends State<HomePage> {
                                     itemBuilder:
                                         (BuildContext context, int index) {
                                       return Container(
+                                        padding: const EdgeInsets.all(14),
                                         decoration: BoxDecoration(
-                                            color: MyColors.white,
-                                            border: Border.all(
-                                              color: MyColors.lightGrey,
-                                            )),
+                                          color: MyColors.white,
+                                          border: Border.all(
+                                            color: MyColors.lightGrey,
+                                          ),
+                                        ),
+                                        child: Column(
+                                          children: [
+                                            Image.asset(Assets
+                                                .creationalAbstractFactoryMini),
+                                            const SizedBox(height: 12),
+                                            Text(
+                                              'Abstract\nFactory',
+                                              textAlign: TextAlign.center,
+                                              style: TextStyle(
+                                                  color: MyColors.black,
+                                                  fontSize: 16,
+                                                  fontWeight: FontWeight.bold),
+                                            ),
+                                          ],
+                                        ),
                                       );
                                     }),
                               ),
