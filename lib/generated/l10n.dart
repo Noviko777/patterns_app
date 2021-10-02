@@ -109,6 +109,126 @@ class S {
       args: [],
     );
   }
+
+  /// `Factory Method`
+  String get factoryMethod {
+    return Intl.message(
+      'Factory Method',
+      name: 'factoryMethod',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Abstract Factory`
+  String get abstractFactory {
+    return Intl.message(
+      'Abstract Factory',
+      name: 'abstractFactory',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Builder`
+  String get builder {
+    return Intl.message(
+      'Builder',
+      name: 'builder',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Prototype`
+  String get prototype {
+    return Intl.message(
+      'Prototype',
+      name: 'prototype',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Singleton`
+  String get singleton {
+    return Intl.message(
+      'Singleton',
+      name: 'singleton',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Adapter`
+  String get adapter {
+    return Intl.message(
+      'Adapter',
+      name: 'adapter',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Bridge`
+  String get bridge {
+    return Intl.message(
+      'Bridge',
+      name: 'bridge',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Composite`
+  String get composite {
+    return Intl.message(
+      'Composite',
+      name: 'composite',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Decorator`
+  String get decorator {
+    return Intl.message(
+      'Decorator',
+      name: 'decorator',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Facade`
+  String get facade {
+    return Intl.message(
+      'Facade',
+      name: 'facade',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Flyweight`
+  String get flyweight {
+    return Intl.message(
+      'Flyweight',
+      name: 'flyweight',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Proxy`
+  String get proxy {
+    return Intl.message(
+      'Proxy',
+      name: 'proxy',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

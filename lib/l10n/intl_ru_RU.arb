@@ -4,5 +4,17 @@
   "whatIsAPattern": "What is a Pattern",
   "creationalPatterns": "Creational patterns",
   "structuralPatterns": "Structural patterns",
-  "behavioralPatterns": "Behavioral patterns"
+  "behavioralPatterns": "Behavioral patterns",
+  "factoryMethod": "Factory Method",
+  "abstractFactory": "Abstract Factory",
+  "builder": "Builder",
+  "prototype": "Prototype",
+  "singleton": "Singleton",
+  "adapter": "Adapter",
+  "bridge": "Bridge",
+  "composite": "Composite",
+  "decorator": "Decorator",
+  "facade": "Facade",
+  "flyweight": "Flyweight",
+  "proxy": "Proxy"
 }

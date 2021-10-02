@@ -2,6 +2,25 @@
 class Assets {
   Assets._();
 
+  static const String behavioralChainOfResponsibilityMini =
+      'assets/behavioral/chain_of_responsibility_mini.png';
+  static const String behavioralCommandMini =
+      'assets/behavioral/command_mini.png';
+  static const String behavioralIteratorMini =
+      'assets/behavioral/iterator_mini.png';
+  static const String behavioralMediatorMini =
+      'assets/behavioral/mediator_mini.png';
+  static const String behavioralMementoMini =
+      'assets/behavioral/memento_mini.png';
+  static const String behavioralObserverMini =
+      'assets/behavioral/observer_mini.png';
+  static const String behavioralStateMini = 'assets/behavioral/state_mini.png';
+  static const String behavioralStrategyMini =
+      'assets/behavioral/strategy_mini.png';
+  static const String behavioralTemplateMethodMini =
+      'assets/behavioral/template_method_mini.png';
+  static const String behavioralVisitorMini =
+      'assets/behavioral/visitor_mini.png';
   static const String creationalAbstractFactoryMini =
       'assets/creational/abstract_factory_mini.png';
   static const String creationalBuilderMini =
@@ -13,4 +32,17 @@ class Assets {
   static const String creationalSingletonMini =
       'assets/creational/singleton_mini.png';
   static const String imagesPatternsEnot = 'assets/images/patterns_enot.png';
+  static const String structuralAdapterMini =
+      'assets/structural/adapter_mini.png';
+  static const String structuralBridgeMini =
+      'assets/structural/bridge_mini.png';
+  static const String structuralCompositeMini =
+      'assets/structural/composite_mini.png';
+  static const String structuralDecoratorMini =
+      'assets/structural/decorator_mini.png';
+  static const String structuralFacadeMini =
+      'assets/structural/facade_mini.png';
+  static const String structuralFlyweightMini =
+      'assets/structural/flyweight_mini.png';
+  static const String structuralProxyMini = 'assets/structural/proxy_mini.png';
 }

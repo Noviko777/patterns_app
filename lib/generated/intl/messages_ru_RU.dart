@@ -21,12 +21,25 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "abstractFactory":
+            MessageLookupByLibrary.simpleMessage("Abstract Factory"),
+        "adapter": MessageLookupByLibrary.simpleMessage("Adapter"),
         "behavioralPatterns":
             MessageLookupByLibrary.simpleMessage("Behavioral patterns"),
+        "bridge": MessageLookupByLibrary.simpleMessage("Bridge"),
+        "builder": MessageLookupByLibrary.simpleMessage("Builder"),
+        "composite": MessageLookupByLibrary.simpleMessage("Composite"),
         "creationalPatterns":
             MessageLookupByLibrary.simpleMessage("Creational patterns"),
+        "decorator": MessageLookupByLibrary.simpleMessage("Decorator"),
         "design": MessageLookupByLibrary.simpleMessage("DESIGN"),
+        "facade": MessageLookupByLibrary.simpleMessage("Facade"),
+        "factoryMethod": MessageLookupByLibrary.simpleMessage("Factory Method"),
+        "flyweight": MessageLookupByLibrary.simpleMessage("Flyweight"),
         "patterns": MessageLookupByLibrary.simpleMessage("PATTERNS"),
+        "prototype": MessageLookupByLibrary.simpleMessage("Prototype"),
+        "proxy": MessageLookupByLibrary.simpleMessage("Proxy"),
+        "singleton": MessageLookupByLibrary.simpleMessage("Singleton"),
         "structuralPatterns":
             MessageLookupByLibrary.simpleMessage("Structural patterns"),
         "whatIsAPattern":
