@@ -1,0 +1,8 @@
+{
+  "patterns": "PATTERNS",
+  "design": "DESIGN",
+  "whatIsAPattern": "What is a Pattern",
+  "creationalPatterns": "Creational patterns",
+  "structuralPatterns": "Structural patterns",
+  "behavioralPatterns": "Behavioral patterns"
+}
