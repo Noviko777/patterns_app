@@ -41,6 +41,10 @@ flutter:
     - assets/creational/
     - assets/structural/
     - assets/behavioral/
+    - assets/description/
+    - assets/problem/
+    - assets/solution/
+    - assets/example/
 
   fonts:
     - family: PTSans

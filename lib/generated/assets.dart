@@ -31,7 +31,15 @@ class Assets {
       'assets/creational/prototype_mini.png';
   static const String creationalSingletonMini =
       'assets/creational/singleton_mini.png';
+  static const String descriptionAbstractFactory =
+      'assets/description/abstract_factory.png';
+  static const String exampleAbstractFactoryExample =
+      'assets/example/abstract_factory_example.png';
   static const String imagesPatternsEnot = 'assets/images/patterns_enot.png';
+  static const String problemAbstractFactoryProblem =
+      'assets/problem/abstract_factory_problem.png';
+  static const String solutionAbstractFactorySolution =
+      'assets/solution/abstract_factory_solution.png';
   static const String structuralAdapterMini =
       'assets/structural/adapter_mini.png';
   static const String structuralBridgeMini =

@@ -7,97 +7,101 @@ class PatternsRepository {
   List<PatternModel> getCreationalPatterns(BuildContext context) => [
         PatternModel(
           name: S.of(context).factoryMethod,
-          assetImage: Assets.creationalFactoryMethodMini,
+          assetMiniImage: Assets.creationalFactoryMethodMini,
         ),
         PatternModel(
           name: S.of(context).abstractFactory,
-          assetImage: Assets.creationalAbstractFactoryMini,
+          assetImage: Assets.descriptionAbstractFactory,
+          assetProblemImage: Assets.problemAbstractFactoryProblem,
+          assetSolutionImage: Assets.solutionAbstractFactorySolution,
+          assetExampleImage: Assets.exampleAbstractFactoryExample,
+          assetMiniImage: Assets.creationalAbstractFactoryMini,
         ),
         PatternModel(
           name: S.of(context).builder,
-          assetImage: Assets.creationalBuilderMini,
+          assetMiniImage: Assets.creationalBuilderMini,
         ),
         PatternModel(
           name: S.of(context).prototype,
-          assetImage: Assets.creationalPrototypeMini,
+          assetMiniImage: Assets.creationalPrototypeMini,
         ),
         PatternModel(
           name: S.of(context).singleton,
-          assetImage: Assets.creationalSingletonMini,
+          assetMiniImage: Assets.creationalSingletonMini,
         ),
       ];
 
   List<PatternModel> getStructuralPatterns(BuildContext context) => [
         PatternModel(
           name: S.of(context).adapter,
-          assetImage: Assets.structuralAdapterMini,
+          assetMiniImage: Assets.structuralAdapterMini,
         ),
         PatternModel(
           name: S.of(context).bridge,
-          assetImage: Assets.structuralBridgeMini,
+          assetMiniImage: Assets.structuralBridgeMini,
         ),
         PatternModel(
           name: S.of(context).composite,
-          assetImage: Assets.structuralCompositeMini,
+          assetMiniImage: Assets.structuralCompositeMini,
         ),
         PatternModel(
           name: S.of(context).decorator,
-          assetImage: Assets.structuralDecoratorMini,
+          assetMiniImage: Assets.structuralDecoratorMini,
         ),
         PatternModel(
           name: S.of(context).facade,
-          assetImage: Assets.structuralFacadeMini,
+          assetMiniImage: Assets.structuralFacadeMini,
         ),
         PatternModel(
           name: S.of(context).flyweight,
-          assetImage: Assets.structuralFlyweightMini,
+          assetMiniImage: Assets.structuralFlyweightMini,
         ),
         PatternModel(
           name: S.of(context).proxy,
-          assetImage: Assets.structuralProxyMini,
+          assetMiniImage: Assets.structuralProxyMini,
         ),
       ];
 
   List<PatternModel> getBehavioralPatterns(BuildContext context) => [
         PatternModel(
           name: 'Chain of Responsibility',
-          assetImage: Assets.behavioralChainOfResponsibilityMini,
+          assetMiniImage: Assets.behavioralChainOfResponsibilityMini,
         ),
         PatternModel(
           name: 'Command',
-          assetImage: Assets.behavioralCommandMini,
+          assetMiniImage: Assets.behavioralCommandMini,
         ),
         PatternModel(
           name: 'Iterator',
-          assetImage: Assets.behavioralIteratorMini,
+          assetMiniImage: Assets.behavioralIteratorMini,
         ),
         PatternModel(
           name: 'Mediator',
-          assetImage: Assets.behavioralMediatorMini,
+          assetMiniImage: Assets.behavioralMediatorMini,
         ),
         PatternModel(
           name: 'Memento',
-          assetImage: Assets.behavioralMementoMini,
+          assetMiniImage: Assets.behavioralMementoMini,
         ),
         PatternModel(
           name: 'Observer',
-          assetImage: Assets.behavioralObserverMini,
+          assetMiniImage: Assets.behavioralObserverMini,
         ),
         PatternModel(
           name: 'State',
-          assetImage: Assets.behavioralStateMini,
+          assetMiniImage: Assets.behavioralStateMini,
         ),
         PatternModel(
           name: 'Strategy',
-          assetImage: Assets.behavioralStrategyMini,
+          assetMiniImage: Assets.behavioralStrategyMini,
         ),
         PatternModel(
           name: 'Template Method',
-          assetImage: Assets.behavioralTemplateMethodMini,
+          assetMiniImage: Assets.behavioralTemplateMethodMini,
         ),
         PatternModel(
           name: 'Visitor',
-          assetImage: Assets.behavioralVisitorMini,
+          assetMiniImage: Assets.behavioralVisitorMini,
         ),
       ];
 }
