@@ -33,13 +33,38 @@ class Assets {
       'assets/creational/singleton_mini.png';
   static const String descriptionAbstractFactory =
       'assets/description/abstract_factory.png';
+  static const String descriptionBuilder = 'assets/description/builder.png';
+  static const String descriptionFactoryMethod =
+      'assets/description/factory_method.png';
+  static const String descriptionPrototype = 'assets/description/prototype.png';
+  static const String descriptionSingleton = 'assets/description/singleton.png';
   static const String exampleAbstractFactoryExample =
       'assets/example/abstract_factory_example.png';
+  static const String exampleBuilderExample =
+      'assets/example/builder_example.png';
+  static const String exampleFactoryExample =
+      'assets/example/factory_example.png';
+  static const String examplePrototypeExample =
+      'assets/example/prototype_example.png';
   static const String imagesPatternsEnot = 'assets/images/patterns_enot.png';
   static const String problemAbstractFactoryProblem =
       'assets/problem/abstract_factory_problem.png';
+  static const String problemBuilderProblem =
+      'assets/problem/builder_problem.png';
+  static const String problemFactoryProblem =
+      'assets/problem/factory_problem.png';
+  static const String problemPrototypeProblem =
+      'assets/problem/prototype_problem.png';
+  static const String problemSingletonProblem =
+      'assets/problem/singleton_problem.png';
   static const String solutionAbstractFactorySolution =
       'assets/solution/abstract_factory_solution.png';
+  static const String solutionBuilderSolution =
+      'assets/solution/builder_solution.png';
+  static const String solutionFactorySolution =
+      'assets/solution/factory_solution.png';
+  static const String solutionPrototypeSolution =
+      'assets/solution/prototype_solution.png';
   static const String structuralAdapterMini =
       'assets/structural/adapter_mini.png';
   static const String structuralBridgeMini =

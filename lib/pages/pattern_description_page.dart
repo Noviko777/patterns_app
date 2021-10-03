@@ -1,9 +1,12 @@
+import 'package:code_text_field/code_text_field.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:patterns_app/colors.dart';
 import 'package:patterns_app/data/models/pattern_model.dart';
 import 'package:patterns_app/generated/l10n.dart';
 import 'package:patterns_app/utils/code_examples.dart';
+import 'package:highlight/languages/dart.dart';
+import 'package:flutter_highlight/themes/atom-one-dark.dart';
 
 class PatternDescriptionPage extends StatefulWidget {
   const PatternDescriptionPage({Key? key}) : super(key: key);
@@ -55,7 +58,7 @@ class _PatternDescriptionPageState extends State<PatternDescriptionPage> {
               ),
               const SizedBox(height: 4),
               Text(
-                strings.abstractFactoryIsACreationalDesignPatternThatLetsYou,
+                pattern?.shortDetails ?? '',
                 style: const TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w500,
@@ -63,9 +66,10 @@ class _PatternDescriptionPageState extends State<PatternDescriptionPage> {
                 ),
               ),
               const SizedBox(height: 24),
-              Image.asset(
-                pattern?.assetImage ?? '',
-              ),
+              if (pattern?.assetImage != null)
+                Image.asset(
+                  pattern?.assetImage ?? '',
+                ),
               const SizedBox(height: 4),
               Row(
                 children: [
@@ -86,7 +90,7 @@ class _PatternDescriptionPageState extends State<PatternDescriptionPage> {
               ),
               const SizedBox(height: 4),
               Text(
-                strings.imagineThatYoureCreatingAFurnitureShopSimulatorYourCode,
+                pattern?.problem ?? '',
                 style: const TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w500,
@@ -94,9 +98,10 @@ class _PatternDescriptionPageState extends State<PatternDescriptionPage> {
                 ),
               ),
               const SizedBox(height: 12),
-              Image.asset(
-                pattern?.assetProblemImage ?? '',
-              ),
+              if (pattern?.assetProblemImage != null)
+                Image.asset(
+                  pattern?.assetProblemImage ?? '',
+                ),
               const SizedBox(height: 4),
               Row(
                 children: [
@@ -117,7 +122,7 @@ class _PatternDescriptionPageState extends State<PatternDescriptionPage> {
               ),
               const SizedBox(height: 4),
               Text(
-                strings.theFirstThingTheAbstractFactoryPatternSuggestsIsTo,
+                pattern?.solution ?? '',
                 style: const TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w500,
@@ -125,9 +130,10 @@ class _PatternDescriptionPageState extends State<PatternDescriptionPage> {
                 ),
               ),
               const SizedBox(height: 12),
-              Image.asset(
-                pattern?.assetSolutionImage ?? '',
-              ),
+              if (pattern?.assetSolutionImage != null)
+                Image.asset(
+                  pattern?.assetSolutionImage ?? '',
+                ),
               const SizedBox(height: 4),
               Row(
                 children: [
@@ -147,6 +153,15 @@ class _PatternDescriptionPageState extends State<PatternDescriptionPage> {
                 ],
               ),
               const SizedBox(height: 4),
+              if (pattern?.codeExample != null)
+                CodeField(
+                  controller: CodeController(
+                    language: dart,
+                    text: pattern?.codeExample,
+                    theme: atomOneDarkTheme,
+                  ),
+                  enabled: false,
+                ),
             ],
           ),
         ),

@@ -9,6 +9,17 @@ import 'package:patterns_app/generated/l10n.dart';
 import 'package:patterns_app/widgets/expansion_item.dart';
 import 'package:patterns_app/widgets/pattern_item.dart';
 
+abstract class Button {
+  void paint();
+}
+
+class MacOSButton implements Button {
+  @override
+  void paint() {
+    print("You have created MacOSButton.");
+  }
+}
+
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
