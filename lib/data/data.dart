@@ -93,41 +93,138 @@ class PatternsRepository {
   List<PatternModel> getStructuralPatterns(BuildContext context) => [
         PatternModel(
           name: S.of(context).adapter,
+          shortDetails: S
+              .of(context)
+              .adapterIsAStructuralDesignPatternThatAllowsObjectsWith,
+          problem: S
+              .of(context)
+              .imagineThatYoureCreatingAStockMarketMonitoringAppThe,
+          solution: S.of(context).youCanCreateAnAdapterThisIsASpecialObject,
+          codeExample: CodeExamples.abstractFactory,
+          assetImage: Assets.descriptionAdapter,
+          assetProblemImage: Assets.problemAdapterProblem,
+          assetSolutionImage: Assets.solutionAdapterSolution,
+          assetExampleImage: Assets.exampleAdapterExample,
           assetMiniImage: Assets.structuralAdapterMini,
         ),
         PatternModel(
           name: S.of(context).bridge,
+          shortDetails:
+              S.of(context).bridgeIsAStructuralDesignPatternThatLetsYouSplit,
+          problem: S.of(context).sayYouHaveAGeometricShapeClassWithAPair,
+          solution:
+              S.of(context).thisProblemOccursBecauseWereTryingToExtendTheShape,
+          codeExample: CodeExamples.abstractFactory,
+          assetImage: Assets.descriptionBridge,
+          assetProblemImage: Assets.problemBridgeProblem,
+          assetSolutionImage: Assets.solutionBridgeSolution,
+          assetExampleImage: Assets.exampleBridgeExample,
           assetMiniImage: Assets.structuralBridgeMini,
         ),
         PatternModel(
           name: S.of(context).composite,
+          shortDetails: S
+              .of(context)
+              .compositeIsAStructuralDesignPatternThatLetsYouCompose,
+          problem:
+              S.of(context).usingTheCompositePatternMakesSenseOnlyWhenTheCore,
+          solution: S
+              .of(context)
+              .theCompositePatternSuggestsThatYouWorkWithProductsAnd,
+          codeExample: CodeExamples.abstractFactory,
+          assetImage: Assets.descriptionComposite,
+          assetProblemImage: Assets.problemCompositeProblem,
+          assetSolutionImage: Assets.solutionCompositeSolution,
+          assetExampleImage: Assets.exampleCompositeExample,
           assetMiniImage: Assets.structuralCompositeMini,
         ),
         PatternModel(
           name: S.of(context).decorator,
+          shortDetails: S
+              .of(context)
+              .decoratorIsAStructuralDesignPatternThatLetsYouAttach,
+          problem: S
+              .of(context)
+              .imagineThatYoureWorkingOnANotificationLibraryWhichLets,
+          solution: S.of(context).extendingAClassIsTheFirstThingThatComesTo,
+          codeExample: CodeExamples.abstractFactory,
+          assetImage: Assets.descriptionComposite,
+          assetProblemImage: Assets.problemCompositeProblem,
+          assetSolutionImage: Assets.solutionCompositeSolution,
+          assetExampleImage: Assets.exampleCompositeExample,
           assetMiniImage: Assets.structuralDecoratorMini,
         ),
         PatternModel(
           name: S.of(context).facade,
+          shortDetails: S
+              .of(context)
+              .facadeIsAStructuralDesignPatternThatProvidesASimplified,
+          problem: S.of(context).imagineThatYouMustMakeYourCodeWorkWithA,
+          solution: S.of(context).aFacadeIsAClassThatProvidesASimpleInterface,
+          codeExample: CodeExamples.abstractFactory,
+          assetImage: Assets.descriptionFacade,
+          assetExampleImage: Assets.exampleFacadeExample,
           assetMiniImage: Assets.structuralFacadeMini,
         ),
         PatternModel(
           name: S.of(context).flyweight,
+          shortDetails:
+              S.of(context).flyweightIsAStructuralDesignPatternThatLetsYouFit,
+          problem: S.of(context).toHaveSomeFunAfterLongWorkingHoursYouDecided,
+          solution:
+              S.of(context).onCloserInspectionOfTheParticleClassYouMayNotice,
+          codeExample: CodeExamples.abstractFactory,
+          assetImage: Assets.descriptionFlyweight,
+          assetProblemImage: Assets.problemFlyweightProblem,
+          assetSolutionImage: Assets.solutionFlywightSolution,
+          assetExampleImage: Assets.exampleFlyweightExample,
           assetMiniImage: Assets.structuralFlyweightMini,
         ),
         PatternModel(
           name: S.of(context).proxy,
+          shortDetails:
+              S.of(context).proxyIsAStructuralDesignPatternThatLetsYouProvide,
+          problem: S.of(context).whyWouldYouWantToControlAccessToAnObject,
+          solution: S.of(context).theProxyPatternSuggestsThatYouCreateANewProxy,
+          codeExample: CodeExamples.abstractFactory,
+          assetImage: Assets.descriptionProxy,
+          assetProblemImage: Assets.problemProxyProblem,
+          assetSolutionImage: Assets.solutionProxySolution,
+          assetExampleImage: Assets.exampleProxyExample,
           assetMiniImage: Assets.structuralProxyMini,
         ),
       ];
 
   List<PatternModel> getBehavioralPatterns(BuildContext context) => [
         PatternModel(
-          name: 'Chain of Responsibility',
+          name: S.of(context).chainOfResponsibility,
+          shortDetails: S
+              .of(context)
+              .chainOfResponsibilityIsABehavioralDesignPatternThatLets,
+          problem:
+              S.of(context).imagineThatYoureWorkingOnAnOnlineOrderingSystemYou,
+          solution: S
+              .of(context)
+              .likeManyOtherBehavioralDesignPatternsTheChainOfResponsibility,
+          codeExample: CodeExamples.abstractFactory,
+          assetImage: Assets.descriptionChainOfResponsibility,
+          assetProblemImage: Assets.problemChainOfResponsibilityProblem,
+          assetSolutionImage: Assets.solutionChainOfResponsibilitySolution,
+          assetExampleImage: Assets.exampleChainOfResponsibilityExample,
           assetMiniImage: Assets.behavioralChainOfResponsibilityMini,
         ),
         PatternModel(
-          name: 'Command',
+          name: S.of(context).command,
+          shortDetails:
+              S.of(context).commandIsABehavioralDesignPatternThatTurnsARequest,
+          problem: S.of(context).imagineThatYoureWorkingOnANewTexteditorAppYour,
+          solution:
+              S.of(context).goodSoftwareDesignIsOftenBasedOnThePrincipleOf,
+          codeExample: CodeExamples.abstractFactory,
+          assetImage: Assets.descriptionCommand,
+          assetProblemImage: Assets.problemCommandProblem,
+          assetSolutionImage: Assets.solutionCommandSolution,
+          assetExampleImage: Assets.exampleCommandExample,
           assetMiniImage: Assets.behavioralCommandMini,
         ),
         PatternModel(
