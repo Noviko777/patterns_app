@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:patterns_app/colors.dart';
 import 'package:patterns_app/data/models/pattern_model.dart';
 import 'package:patterns_app/generated/l10n.dart';
-import 'package:patterns_app/utils/code_examples.dart';
 import 'package:highlight/languages/dart.dart';
 import 'package:flutter_highlight/themes/atom-one-dark.dart';
+import 'package:patterns_app/styles.dart';
 
 class PatternDescriptionPage extends StatefulWidget {
   const PatternDescriptionPage({Key? key}) : super(key: key);
@@ -50,20 +50,12 @@ class _PatternDescriptionPageState extends State<PatternDescriptionPage> {
             children: [
               Text(
                 pattern?.name ?? '',
-                style: const TextStyle(
-                  fontSize: 36,
-                  fontWeight: FontWeight.w900,
-                  color: MyColors.grey,
-                ),
+                style: MyStyles.h1,
               ),
               const SizedBox(height: 4),
               Text(
                 pattern?.shortDetails ?? '',
-                style: const TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w500,
-                  color: MyColors.grey,
-                ),
+                style: MyStyles.body1,
               ),
               const SizedBox(height: 24),
               if (pattern?.assetImage != null)
@@ -80,22 +72,14 @@ class _PatternDescriptionPageState extends State<PatternDescriptionPage> {
                   const SizedBox(width: 6),
                   Text(
                     strings.problem,
-                    style: const TextStyle(
-                      fontSize: 26,
-                      fontWeight: FontWeight.bold,
-                      color: MyColors.grey,
-                    ),
+                    style: MyStyles.h2,
                   ),
                 ],
               ),
               const SizedBox(height: 4),
               Text(
                 pattern?.problem ?? '',
-                style: const TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w500,
-                  color: MyColors.grey,
-                ),
+                style: MyStyles.body1,
               ),
               const SizedBox(height: 12),
               if (pattern?.assetProblemImage != null)
@@ -112,22 +96,14 @@ class _PatternDescriptionPageState extends State<PatternDescriptionPage> {
                   const SizedBox(width: 6),
                   Text(
                     strings.solution,
-                    style: const TextStyle(
-                      fontSize: 26,
-                      fontWeight: FontWeight.bold,
-                      color: MyColors.grey,
-                    ),
+                    style: MyStyles.h2,
                   ),
                 ],
               ),
               const SizedBox(height: 4),
               Text(
                 pattern?.solution ?? '',
-                style: const TextStyle(
-                  fontSize: 16,
-                  fontWeight: FontWeight.w500,
-                  color: MyColors.grey,
-                ),
+                style: MyStyles.body1,
               ),
               const SizedBox(height: 12),
               if (pattern?.assetSolutionImage != null)
@@ -144,11 +120,7 @@ class _PatternDescriptionPageState extends State<PatternDescriptionPage> {
                   const SizedBox(width: 6),
                   Text(
                     strings.codeExample,
-                    style: const TextStyle(
-                      fontSize: 26,
-                      fontWeight: FontWeight.bold,
-                      color: MyColors.grey,
-                    ),
+                    style: MyStyles.h2,
                   ),
                 ],
               ),

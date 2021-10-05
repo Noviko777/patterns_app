@@ -5,6 +5,7 @@ import 'package:patterns_app/colors.dart';
 import 'package:patterns_app/generated/l10n.dart';
 import 'package:patterns_app/pages/home_page.dart';
 import 'package:patterns_app/pages/pattern_description_page.dart';
+import 'package:patterns_app/pages/what_is_pattern_page.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
       routes: {
         HomePage.routeName: (_) => const HomePage(),
         PatternDescriptionPage.routeName: (_) => const PatternDescriptionPage(),
+        WhatIsPatternPage.routeName: (_) => const WhatIsPatternPage(),
       },
       localizationsDelegates: const [
         S.delegate,

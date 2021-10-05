@@ -10,6 +10,7 @@ class ExpansionItem extends StatelessWidget {
     required this.content,
     this.backgroundColor,
     this.fontSize,
+    this.onTap,
     Key? key,
   }) : super(key: key);
 
@@ -17,6 +18,7 @@ class ExpansionItem extends StatelessWidget {
   final Widget content;
   final Color? backgroundColor;
   final double? fontSize;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +30,7 @@ class ExpansionItem extends StatelessWidget {
         toggleFunction,
       ) {
         return InkWell(
-            onTap: () => toggleFunction(animated: true),
+            onTap: onTap ?? () => toggleFunction(animated: true),
             splashColor: MyColors.black.withOpacity(0.15),
             highlightColor: MyColors.black.withOpacity(0.15),
             child: Container(

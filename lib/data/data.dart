@@ -17,7 +17,7 @@ class PatternsRepository {
           solution: S
               .of(context)
               .theFactoryMethodPatternSuggestsThatYouReplaceDirectObject,
-          codeExample: CodeExamples.abstractFactory,
+          codeExample: CodeExamples.factoryMethod,
           assetImage: Assets.descriptionFactoryMethod,
           assetProblemImage: Assets.problemFactoryProblem,
           assetSolutionImage: Assets.solutionFactorySolution,
@@ -52,7 +52,7 @@ class PatternsRepository {
           solution: S
               .of(context)
               .theBuilderPatternSuggestsThatYouExtractTheObjectConstruction,
-          codeExample: CodeExamples.abstractFactory,
+          codeExample: CodeExamples.builder,
           assetImage: Assets.descriptionBuilder,
           assetProblemImage: Assets.problemBuilderProblem,
           assetSolutionImage: Assets.solutionBuilderSolution,
@@ -67,7 +67,7 @@ class PatternsRepository {
           solution: S
               .of(context)
               .thePrototypePatternDelegatesTheCloningProcessToTheActual,
-          codeExample: CodeExamples.abstractFactory,
+          codeExample: CodeExamples.prototype,
           assetImage: Assets.descriptionPrototype,
           assetProblemImage: Assets.problemPrototypeProblem,
           assetSolutionImage: Assets.solutionPrototypeSolution,
@@ -83,7 +83,7 @@ class PatternsRepository {
               S.of(context).theSingletonPatternSolvesTwoProblemsAtTheSameTime,
           solution:
               S.of(context).allImplementationsOfTheSingletonHaveTheseTwoStepsIn,
-          codeExample: CodeExamples.abstractFactory,
+          codeExample: CodeExamples.singleton,
           assetImage: Assets.descriptionSingleton,
           assetProblemImage: Assets.problemSingletonProblem,
           assetMiniImage: Assets.creationalSingletonMini,
@@ -100,7 +100,7 @@ class PatternsRepository {
               .of(context)
               .imagineThatYoureCreatingAStockMarketMonitoringAppThe,
           solution: S.of(context).youCanCreateAnAdapterThisIsASpecialObject,
-          codeExample: CodeExamples.abstractFactory,
+          codeExample: CodeExamples.adapter,
           assetImage: Assets.descriptionAdapter,
           assetProblemImage: Assets.problemAdapterProblem,
           assetSolutionImage: Assets.solutionAdapterSolution,
@@ -114,7 +114,7 @@ class PatternsRepository {
           problem: S.of(context).sayYouHaveAGeometricShapeClassWithAPair,
           solution:
               S.of(context).thisProblemOccursBecauseWereTryingToExtendTheShape,
-          codeExample: CodeExamples.abstractFactory,
+          codeExample: CodeExamples.bridge,
           assetImage: Assets.descriptionBridge,
           assetProblemImage: Assets.problemBridgeProblem,
           assetSolutionImage: Assets.solutionBridgeSolution,
@@ -131,7 +131,7 @@ class PatternsRepository {
           solution: S
               .of(context)
               .theCompositePatternSuggestsThatYouWorkWithProductsAnd,
-          codeExample: CodeExamples.abstractFactory,
+          codeExample: CodeExamples.composite,
           assetImage: Assets.descriptionComposite,
           assetProblemImage: Assets.problemCompositeProblem,
           assetSolutionImage: Assets.solutionCompositeSolution,
@@ -147,7 +147,7 @@ class PatternsRepository {
               .of(context)
               .imagineThatYoureWorkingOnANotificationLibraryWhichLets,
           solution: S.of(context).extendingAClassIsTheFirstThingThatComesTo,
-          codeExample: CodeExamples.abstractFactory,
+          codeExample: CodeExamples.decorator,
           assetImage: Assets.descriptionComposite,
           assetProblemImage: Assets.problemCompositeProblem,
           assetSolutionImage: Assets.solutionCompositeSolution,
@@ -161,7 +161,7 @@ class PatternsRepository {
               .facadeIsAStructuralDesignPatternThatProvidesASimplified,
           problem: S.of(context).imagineThatYouMustMakeYourCodeWorkWithA,
           solution: S.of(context).aFacadeIsAClassThatProvidesASimpleInterface,
-          codeExample: CodeExamples.abstractFactory,
+          codeExample: CodeExamples.facade,
           assetImage: Assets.descriptionFacade,
           assetExampleImage: Assets.exampleFacadeExample,
           assetMiniImage: Assets.structuralFacadeMini,
@@ -206,7 +206,7 @@ class PatternsRepository {
           solution: S
               .of(context)
               .likeManyOtherBehavioralDesignPatternsTheChainOfResponsibility,
-          codeExample: CodeExamples.abstractFactory,
+          codeExample: CodeExamples.chainOfResponsibility,
           assetImage: Assets.descriptionChainOfResponsibility,
           assetProblemImage: Assets.problemChainOfResponsibilityProblem,
           assetSolutionImage: Assets.solutionChainOfResponsibilitySolution,
@@ -228,35 +228,119 @@ class PatternsRepository {
           assetMiniImage: Assets.behavioralCommandMini,
         ),
         PatternModel(
-          name: 'Iterator',
+          name: S.of(context).iterator,
+          shortDetails: S
+              .of(context)
+              .iteratorIsABehavioralDesignPatternThatLetsYouTraverse,
+          problem: S.of(context).collectionsAreOneOfTheMostUsedDataTypesIn,
+          solution: S.of(context).theMainIdeaOfTheIteratorPatternIsToExtract,
+          codeExample: CodeExamples.abstractFactory,
+          assetImage: Assets.descriptionIterator,
+          assetProblemImage: Assets.problemIteratorProblem,
+          assetSolutionImage: Assets.solutionIteratorSolution,
+          assetExampleImage: Assets.exampleIteratorExample,
           assetMiniImage: Assets.behavioralIteratorMini,
         ),
         PatternModel(
-          name: 'Mediator',
+          name: S.of(context).mediator,
+          shortDetails:
+              S.of(context).mediatorIsABehavioralDesignPatternThatLetsYouReduce,
+          problem: S.of(context).sayYouHaveADialogForCreatingAndEditingCustomer,
+          solution: S
+              .of(context)
+              .theMediatorPatternSuggestsThatYouShouldCeaseAllDirect,
+          codeExample: CodeExamples.abstractFactory,
+          assetImage: Assets.descriptionMediator,
+          assetProblemImage: Assets.problemMediatorProblem,
+          assetSolutionImage: Assets.solutionMediatorSolution,
+          assetExampleImage: Assets.exampleMediatorExample,
           assetMiniImage: Assets.behavioralMediatorMini,
         ),
         PatternModel(
-          name: 'Memento',
+          name: S.of(context).memento,
+          shortDetails:
+              S.of(context).mementoIsABehavioralDesignPatternThatLetsYouSave,
+          problem:
+              S.of(context).imagineThatYoureCreatingATextEditorAppInAddition,
+          solution:
+              S.of(context).allProblemsThatWeveJustExperiencedAreCausedByBroken,
+          codeExample: CodeExamples.abstractFactory,
+          assetImage: Assets.descriptionMemento,
+          assetProblemImage: Assets.problemMementoProblem,
+          assetSolutionImage: Assets.solutionMementoSolution,
+          assetExampleImage: Assets.exampleMementoExample,
           assetMiniImage: Assets.behavioralMementoMini,
         ),
         PatternModel(
-          name: 'Observer',
+          name: S.of(context).observer,
+          shortDetails:
+              S.of(context).observerIsABehavioralDesignPatternThatLetsYouDefine,
+          problem: S.of(context).imagineThatYouHaveTwoTypesOfObjectsACustomer,
+          solution:
+              S.of(context).theObjectThatHasSomeInterestingStateIsOftenCalled,
+          codeExample: CodeExamples.abstractFactory,
+          assetImage: Assets.descriptionObserver,
+          assetProblemImage: Assets.problemObserverProblem,
+          assetSolutionImage: Assets.solutionObserverSolution,
+          assetExampleImage: Assets.exampleObserverExample,
           assetMiniImage: Assets.behavioralObserverMini,
         ),
         PatternModel(
-          name: 'State',
+          name: S.of(context).state,
+          shortDetails:
+              S.of(context).stateIsABehavioralDesignPatternThatLetsAnObject,
+          problem: S.of(context).theMainIdeaIsThatAtAnyGivenMomentTheres,
+          solution:
+              S.of(context).theStatePatternSuggestsThatYouCreateNewClassesFor,
+          codeExample: CodeExamples.abstractFactory,
+          assetImage: Assets.descriptionState,
+          assetProblemImage: Assets.problemStateProblem,
+          assetSolutionImage: Assets.solutionStateSolution,
+          assetExampleImage: Assets.exampleStateExample,
           assetMiniImage: Assets.behavioralStateMini,
         ),
         PatternModel(
-          name: 'Strategy',
+          name: S.of(context).strategy,
+          shortDetails:
+              S.of(context).strategyIsABehavioralDesignPatternThatLetsYouDefine,
+          problem: S.of(context).oneDayYouDecidedToCreateANavigationAppFor,
+          solution:
+              S.of(context).theStrategyPatternSuggestsThatYouTakeAClassThat,
+          codeExample: CodeExamples.abstractFactory,
+          assetImage: Assets.descriptionStrategy,
+          assetProblemImage: Assets.problemStrategyProblem,
+          assetSolutionImage: Assets.solutionStrategySolution,
           assetMiniImage: Assets.behavioralStrategyMini,
         ),
         PatternModel(
-          name: 'Template Method',
+          name: S.of(context).templateMethod,
+          shortDetails: S
+              .of(context)
+              .templateMethodIsABehavioralDesignPatternThatDefinesThe,
+          problem: S
+              .of(context)
+              .imagineThatYoureCreatingADataMiningApplicationThatAnalyzes,
+          solution:
+              S.of(context).theTemplateMethodPatternSuggestsThatYouBreakDownAn,
+          codeExample: CodeExamples.abstractFactory,
+          assetImage: Assets.descriptionTemplateMethod,
+          assetProblemImage: Assets.problemTemplateMethodProblem,
+          assetSolutionImage: Assets.solutionTemplateMethodSolution,
+          assetExampleImage: Assets.exampleTemplateMethodExample,
           assetMiniImage: Assets.behavioralTemplateMethodMini,
         ),
         PatternModel(
-          name: 'Visitor',
+          name: S.of(context).visitor,
+          shortDetails: S
+              .of(context)
+              .visitorIsABehavioralDesignPatternThatLetsYouSeparate,
+          problem: S.of(context).imagineThatYourTeamDevelopsAnAppWhichWorksWith,
+          solution:
+              S.of(context).theVisitorPatternSuggestsThatYouPlaceTheNewBehavior,
+          codeExample: CodeExamples.abstractFactory,
+          assetImage: Assets.descriptionVisitor,
+          assetProblemImage: Assets.problemVisitorProblem,
+          assetExampleImage: Assets.exampleVisitorExample,
           assetMiniImage: Assets.behavioralVisitorMini,
         ),
       ];

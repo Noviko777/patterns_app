@@ -4,18 +4,21 @@ import 'package:patterns_app/colors.dart';
 class MyStyles {
   MyStyles._();
 
-  static const title = TextStyle(
+  static const h1 = TextStyle(
+    fontSize: 36,
     fontWeight: FontWeight.w900,
-    fontSize: 18,
+    color: MyColors.grey,
   );
-  static const subTitle = TextStyle(
-    fontWeight: FontWeight.w500,
-    fontSize: 14,
-    color: MyColors.lightGrey,
+
+  static const h2 = TextStyle(
+    fontSize: 26,
+    fontWeight: FontWeight.bold,
+    color: MyColors.grey,
   );
-  static const counter = TextStyle(
+
+  static const body1 = TextStyle(
+    fontSize: 16,
     fontWeight: FontWeight.w500,
-    fontSize: 15,
-    color: MyColors.lightGrey,
+    color: MyColors.grey,
   );
 }

@@ -6,19 +6,9 @@ import 'package:patterns_app/data/data.dart';
 import 'package:patterns_app/data/models/pattern_model.dart';
 import 'package:patterns_app/generated/assets.dart';
 import 'package:patterns_app/generated/l10n.dart';
+import 'package:patterns_app/pages/what_is_pattern_page.dart';
 import 'package:patterns_app/widgets/expansion_item.dart';
 import 'package:patterns_app/widgets/pattern_item.dart';
-
-abstract class Button {
-  void paint();
-}
-
-class MacOSButton implements Button {
-  @override
-  void paint() {
-    print("You have created MacOSButton.");
-  }
-}
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -126,16 +116,13 @@ class _HomePageState extends State<HomePage> {
                     ExpansionItem(
                       title: strings.whatIsAPattern,
                       backgroundColor: MyColors.black.withOpacity(0.1),
-                      content: Container(
-                        width: double.infinity,
-                        color: Colors.grey.shade100,
-                        padding: EdgeInsets.all(20),
-                        child: Text('Expaned Content'),
-                      ),
+                      content: const SizedBox(),
+                      onTap: () => Navigator.pushNamed(
+                          context, WhatIsPatternPage.routeName),
                     ),
                     SizedBox(
                       child: ExpansionItem(
-                        title: 'Catalog',
+                        title: strings.catalog,
                         backgroundColor: MyColors.black.withOpacity(0.1),
                         content: Container(
                           width: double.infinity,
